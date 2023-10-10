@@ -1,27 +1,19 @@
-#include "main.h"
+#include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
  * init_dog - entry point
- * @d: input
+ * @d: pointer to the struct
  * @name: name of dog
  * @owner: owner of dog
  * @age: age of dog
- * Return: 0
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog
-	{
-		char name[];
-		float age;
-		char owner[];
-	};
-
-	printf("name: %s\n", name);
-	printf("age: %f\n", age);
-	printf("owner: %s\n", owner);
-
-	return (0);
+	if (d == NULL)
+		return;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
