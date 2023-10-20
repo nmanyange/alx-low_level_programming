@@ -1,7 +1,7 @@
 #include "lists.h"
 void ComeFirstbyNM(void)__attribute__((constructor));
 /**
- * ComeFirst - function that runs befire the main function
+ * ComeFirstbyNM - function that runs befire the main function
  */
 void ComeFirstbyNM(void)
 {
