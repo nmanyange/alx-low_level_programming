@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (not_fin)
 				printf(", ");
-			printf("%s': '%s", bucket->key, bucket->value);
+			printf("'%s': '%s'", bucket->key, bucket->value);
 			not_fin = 1;
 			bucket = bucket->next;
 		}
